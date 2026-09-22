@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 import { setupProjects } from './projects';
+import { setupFAQ } from './faq';
 
 
 import Lenis from 'lenis';
@@ -82,6 +83,7 @@ function initPage() {
     if(id===generation&&!abort.signal.aborted)disposers.push(setupHeroMotion(abort.signal,reduced));
   }).catch(()=>{});
   disposers.push(setupProjects(abort.signal,reduced));
+  disposers.push(setupFAQ(abort.signal,reduced,()=>{ScrollTrigger.refresh();lenis?.resize();}));
 
   const shapes=[...document.querySelectorAll<HTMLElement>('#swup [data-shape]')];
   let shapeFrame=0;
