@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Arrow from '../../components/Arrow.astro';
+import cases from '../../data/cases.json';
+import { local } from '../../data/site';
+export function getStaticPaths() { return cases.map((project, i) => ({ params: { slug: project.slug }, props: { project, next: cases[(i+1)%cases.length] } })); }
+const { project, next } = Astro.props;
+---
+<Layout title={`${project.category} — ${project.title} ${project.subtitle} | Rafael Stork`} description={project.summary}>
+  <article class="case wrap">
+    <a class="back-link" href={local('trabalhos/')}><span aria-hidden="true">←</span> Todos os trabalhos</a>
+    <div class="case-heading"><div><h1 data-title>{project.title} <br /><span>{project.subtitle}.</span></h1><p>{project.category}</p></div>{project.url && <a class="text-link" href={project.url} target="_blank" rel="noopener noreferrer">Visitar o site <Arrow diagonal /></a>}</div>
+    <div class="case-cover" style={`--project-color:${project.color}`}><img src={local(`images/${project.image}`)} alt={project.alt} width="1265" height="713" fetchpriority="high" /></div>
+    <div class="case-intro"><h2 data-reveal>{project.summary}</h2><div><p class="large-copy">{project.intro}</p><ul class="case-tags">{project.focus.map((item) => <li>{item}</li>)}</ul></div></div>
+    {project.detailImage && <figure class="case-detail-image"><img src={local(`images/${project.detailImage}`)} alt={project.detailAlt} width="1200" height="800" loading="lazy" /><figcaption>Imagem apresentada no site da 321 Modular Jaguaruna.</figcaption></figure>}
+    <section class="case-deck"><h2 data-reveal>O projeto em perspectiva.</h2><iframe src={local(`apresentacoes/${project.slug}/`)} title={`Apresentação de ${project.title}`} loading="lazy"></iframe><a class="text-link" href={local(`apresentacoes/${project.slug}/`)} target="_blank" rel="noopener">Abrir apresentação em tela inteira <Arrow diagonal /></a></section>
+    <div class="case-gallery">{project.gallery?.slice(1).map(asset => <figure><img src={local(`images/${asset.image}`)} alt={asset.alt} width={asset.width} height={asset.height} loading="lazy" /><figcaption>{asset.alt}</figcaption></figure>)}</div>
+    <div class="case-sections">{project.sections.map((section) => <section><h2 data-reveal>{section.title}</h2><p>{section.text}</p></section>)}</div>
+    <a class="next-case" href={local(`trabalhos/${next.slug}/`)}><span>Próximo trabalho</span><strong>{next.title}<br />{next.subtitle}</strong><Arrow /></a>
+  </article>
+</Layout>

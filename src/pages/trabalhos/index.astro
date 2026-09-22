@@ -1,0 +1,9 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Arrow from '../../components/Arrow.astro';
+import cases from '../../data/cases.json';
+import {local} from '../../data/site';
+---
+<Layout title="Portfólio de sites, marcas e SaaS — Rafael Stork" description="Explore projetos de identidade visual, sites e desenvolvimento de SaaS de Rafael Stork.">
+<section class="work-archive wrap"><a class="back-link" href={local()}>Início</a><h1 data-title>Trabalhos.<br />Em todas as formas.</h1><p class="archive-intro">Identidades, experiências digitais e produtos completos.</p><div class="archive-grid">{cases.map(project=><article><a class="archive-image" href={local(`trabalhos/${project.slug}/`)}><img src={local(`images/${project.image}`)} alt={project.alt} width={project.gallery[0].width} height={project.gallery[0].height} loading="lazy" /></a><div class="archive-caption"><div><p>{project.category}</p><h2><a href={local(`trabalhos/${project.slug}/`)}>{project.title} — {project.subtitle}</a></h2></div><a href={local(`trabalhos/${project.slug}/`)} aria-label={`Abrir ${project.title} — ${project.subtitle}`}><Arrow diagonal /></a></div></article>)}</div></section>
+</Layout>

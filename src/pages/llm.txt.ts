@@ -1,0 +1,5 @@
+import cases from '../data/cases.json';
+export const GET=({site}:{site:URL})=>{
+ const url=(path='')=>new URL(import.meta.env.BASE_URL.replace(/\/$/,'')+'/'+path,site).href;
+ return new Response(`# Rafael Stork\n\n> Designer e desenvolvedor web. Criação de identidade visual, sites e produtos digitais para empresas de diversos setores.\n\n## Serviços\n- Identidade visual e design de marcas.\n- Web design e criação de sites.\n- Desenvolvimento de SaaS e produtos digitais.\n\n## Páginas\n- [Início](${url()})\n- [Sobre Rafael Stork](${url('sobre/')})\n- [Todos os trabalhos](${url('trabalhos/')})\n- [Política de privacidade](${url('politica-de-privacidade/')})\n\n## Cases\n${cases.map(p=>`- [${p.title} — ${p.subtitle}](${url(`trabalhos/${p.slug}/`)}): ${p.category}.`).join('\n')}\n\nO Faz Agenda foi desenvolvido integralmente por Rafael Stork, incluindo o SaaS. Não há métricas comerciais, prêmios ou depoimentos declarados neste portfólio.\n\n## Contato\n- WhatsApp: https://wa.me/5548984648376\n- Instagram: https://www.instagram.com/rafaelstork.dzn/\n- Resposta no mesmo dia útil.\n`,{headers:{'Content-Type':'text/plain; charset=utf-8'}});
+};

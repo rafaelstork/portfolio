@@ -1,0 +1,23 @@
+---
+import allCases from '../data/cases.json';
+const cases=allCases.filter(project=>project.featured);
+import { local } from '../data/site';
+import Arrow from './Arrow.astro';
+---
+<section id="trabalhos" class="projects wrap" aria-labelledby="projects-title">
+  <div class="section-heading"><h2 id="projects-title" data-reveal>Projetos<br class="mobile-only" /> selecionados.</h2><p>Marcas, sites e produtos.<br />Uma ideia, diferentes presenças.</p></div>
+  <div class="project-explorer" data-project-explorer>
+    <div class="project-index" aria-label="Escolha um projeto"><span class="project-marker" aria-hidden="true"></span>
+      {cases.map((project,index)=><a class="project-choice" id={`choice-${project.slug}`} href={`#preview-${project.slug}`} data-project-choice={index}><span class="project-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><span class="project-choice-copy"><strong>{project.title}{project.title === '321 Modular' && project.type === 'web' ? ` — ${project.subtitle}` : ''}</strong><em>{project.category}</em></span><Arrow diagonal /></a>)}
+    </div>
+    <div class="project-previews">
+      {cases.map((project,index)=><article class="project-preview" id={`preview-${project.slug}`} data-project-panel={index} aria-labelledby={`choice-${project.slug}`}>
+        <div class:list={['preview-gallery',`preview-${project.type}`]}>
+          {project.gallery.slice(0,2).map((asset,i)=><a class:list={['preview-shot',{'preview-shot-detail':i===1}]} href={local(`trabalhos/${project.slug}/`)} aria-label={`Abrir case ${project.title}: ${asset.alt}`} style={`--project-color:${project.color};--image-ratio:${asset.width / asset.height}`}><img src={local(`images/${asset.image}`)} alt={asset.alt} width={asset.width} height={asset.height} loading="lazy" decoding="async" /><span class="preview-open"><Arrow diagonal /></span></a>)}
+        </div>
+        <div class="preview-caption"><p>{project.summary}</p><a class="text-link" href={local(`trabalhos/${project.slug}/`)}>Ver projeto completo <Arrow diagonal /></a></div>
+      </article>)}
+    </div>
+  </div>
+  <a class="text-link all-projects-link" href={local('trabalhos/')}>Explorar todos os trabalhos <Arrow diagonal /></a>
+</section>

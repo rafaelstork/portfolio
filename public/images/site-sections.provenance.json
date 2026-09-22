@@ -1,0 +1,82 @@
+[
+  {
+    "file": "franquias-desktop.webp",
+    "source": "https://franquias.321modular.com.br/",
+    "description": "Página de franquias em computador",
+    "width": 1905,
+    "height": 1072,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "franquias-mobile.webp",
+    "source": "https://franquias.321modular.com.br/",
+    "description": "Página de franquias em celular",
+    "width": 415,
+    "height": 899,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "franquias-processo.webp",
+    "source": "https://franquias.321modular.com.br/",
+    "description": "Etapas para abrir uma franquia",
+    "width": 1905,
+    "height": 1072,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "jaguaruna-desktop.webp",
+    "source": "https://jaguaruna.321modular.com.br/",
+    "description": "Página inicial do catálogo em computador",
+    "width": 1905,
+    "height": 1072,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "jaguaruna-mobile.webp",
+    "source": "https://jaguaruna.321modular.com.br/",
+    "description": "Página do modelo A-Frame em celular",
+    "width": 415,
+    "height": 899,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "jaguaruna-modelo.webp",
+    "source": "https://jaguaruna.321modular.com.br/",
+    "description": "Página interna do modelo A-Frame em computador",
+    "width": 1905,
+    "height": 1072,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "fazagenda-desktop.webp",
+    "source": "https://fazagenda.com.br/",
+    "description": "Apresentação do SaaS em computador",
+    "width": 1910,
+    "height": 1074,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "fazagenda-mobile.webp",
+    "source": "https://fazagenda.com.br/",
+    "description": "Acesso ao aplicativo em celular",
+    "width": 430,
+    "height": 932,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "fazagenda-app.webp",
+    "source": "https://fazagenda.com.br/",
+    "description": "Tela pública de acesso ao aplicativo",
+    "width": 1920,
+    "height": 1080,
+    "capture": "Browser screenshot, 2026-09-21"
+  },
+  {
+    "file": "fazagenda-planos.webp",
+    "source": "https://fazagenda.com.br/",
+    "description": "Planos da plataforma",
+    "width": 1910,
+    "height": 1074,
+    "capture": "Browser screenshot, 2026-09-21"
+  }
+]

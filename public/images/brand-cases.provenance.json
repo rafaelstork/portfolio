@@ -1,0 +1,66 @@
+[
+  {
+    "file": "maria-fachada.webp",
+    "source": "Maria Izabel - Apresentação da marca.pdf",
+    "page": 9,
+    "method": "embedded image extraction"
+  },
+  {
+    "file": "maria-papelaria.webp",
+    "source": "Maria Izabel - Apresentação da marca.pdf",
+    "page": 10,
+    "method": "embedded image extraction"
+  },
+  {
+    "file": "maria-embalagens.webp",
+    "source": "Maria Izabel - Apresentação da marca.pdf",
+    "page": 11,
+    "method": "embedded image extraction"
+  },
+  {
+    "file": "321-brand-capa.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 1,
+    "method": "page render"
+  },
+  {
+    "file": "321-brand-sistema.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 3,
+    "method": "page render"
+  },
+  {
+    "file": "321-brand-aplicacoes.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 9,
+    "method": "page render"
+  },
+  {
+    "file": "fazagenda-interface.webp",
+    "source": "fazagenda.webp",
+    "method": "detail crop of supplied project screenshot"
+  },
+  {
+    "file": "321-franquias-detalhe.webp",
+    "source": "321-franquias.webp",
+    "method": "detail crop of supplied project screenshot"
+  },
+  {
+    "file": "321-brand-camiseta.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 9,
+    "method": "embedded mockup extraction"
+  },
+  {
+    "file": "321-brand-papelaria.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 9,
+    "method": "embedded mockup extraction"
+  },
+  {
+    "file": "321-brand-sacola.webp",
+    "source": "321Modular Brand.pdf",
+    "page": 9,
+    "method": "embedded mockup extraction"
+  }
+]

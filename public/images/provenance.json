@@ -1,0 +1,27 @@
+[
+  {
+    "file": "321-franquias.webp",
+    "source": "../pesquisa-cases/321-franquias-home.png",
+    "origin": "Captura ou imagem do site real fornecido pelo usuário; ver direcao/pesquisa-cases.md"
+  },
+  {
+    "file": "321-jaguaruna.webp",
+    "source": "../pesquisa-cases/321-jaguaruna-home.png",
+    "origin": "Captura ou imagem do site real fornecido pelo usuário; ver direcao/pesquisa-cases.md"
+  },
+  {
+    "file": "fazagenda.webp",
+    "source": "../pesquisa-cases/fazagenda-home.png",
+    "origin": "Captura ou imagem do site real fornecido pelo usuário; ver direcao/pesquisa-cases.md"
+  },
+  {
+    "file": "chale-jaguaruna.webp",
+    "source": "../pesquisa-cases/321-jaguaruna-chale.webp",
+    "origin": "Captura ou imagem do site real fornecido pelo usuário; ver direcao/pesquisa-cases.md"
+  },
+  {
+    "file": "video-poster.webp",
+    "source": "direcao/video/primeiro-quadro.png",
+    "origin": "image_gen; prompt em direcao/video/primeiro-quadro.prompt.json"
+  }
+]

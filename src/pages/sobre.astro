@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Arrow from '../components/Arrow.astro';
+import { local, whatsapp, instagram } from '../data/site';
+---
+<Layout title="Designer e desenvolvedor web — Rafael Stork" description="O olhar de Rafael Stork sobre design, identidade e desenvolvimento web.">
+  <section class="about wrap"><h1 data-title>Clareza no olhar.<br />Intenção no fazer.</h1><div class="about-grid"><figure class="about-portrait"><img src={local('images/rafael-stork.jpg')} width="150" height="150" alt="Rafael Stork, designer e desenvolvedor" /><figcaption>Rafael Stork<br /><span>Design e desenvolvimento</span></figcaption></figure><div><p class="large-copy">Sou Rafael Stork, designer e desenvolvedor web. Meu trabalho conecta identidade visual, composição e experiência digital — de sites a produtos completos, como o SaaS Faz Agenda.</p><p>Gosto de pensar no design como uma construção: entender o contexto, encontrar uma direção e dar atenção às partes que fazem o conjunto funcionar.</p><p>Crio para empresas de diferentes setores, com um olhar que transita entre o digital e o espacial. A forma chama atenção; a clareza permite seguir em frente.</p><a class="text-link" href={whatsapp} target="_blank" rel="noopener noreferrer">Vamos conversar sobre sua ideia <Arrow diagonal /></a><br /><a class="text-link" href={instagram} target="_blank" rel="noopener noreferrer">@rafaelstork.dzn <Arrow diagonal /></a></div></div></section>
+  <section class="principles wrap"><div><h2>Clareza.</h2><p>Uma mensagem que encontra seu lugar e uma navegação que faz sentido.</p></div><div><h2>Proporção.</h2><p>Equilíbrio entre informação, espaço, imagem e movimento.</p></div><div><h2>Presença.</h2><p>Uma identidade reconhecível em cada ponto de contato.</p></div></section>
+</Layout>

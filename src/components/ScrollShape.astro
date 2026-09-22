@@ -1,0 +1,4 @@
+---
+const { variant = 'petals', class: className = '' } = Astro.props;
+---
+<div class:list={['scroll-shape', `shape-${variant}`, className]} data-shape aria-hidden="true"><span></span><span></span><span></span><span></span></div>

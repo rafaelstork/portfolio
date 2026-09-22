@@ -1,0 +1,12 @@
+---
+import {whatsapp} from '../data/site';
+const questions=[
+ ['Que tipos de projeto você desenvolve?', 'Crio identidades visuais, sites, interfaces e produtos digitais. O portfólio reúne projetos de marca, sites comerciais e o Faz Agenda, um SaaS que desenvolvi integralmente.'],
+ ['Você atende empresas de quais setores?', 'Atendo empresas de diversos setores. A conversa inicial ajuda a entender o negócio, o público e o que o projeto precisa comunicar ou resolver.'],
+ ['Como posso solicitar um orçamento?', 'Envie uma mensagem pelo WhatsApp contando sobre sua empresa e o que você quer criar. Se já tiver referências, um site atual ou uma data importante, inclua essas informações. Respondo no mesmo dia útil.'],
+ ['Preciso ter uma identidade visual pronta para criar um site?', 'Você pode trazer uma identidade existente ou incluir a criação da marca no escopo. Essa decisão é definida de acordo com as necessidades do projeto.'],
+ ['Quanto custa e quanto tempo leva um projeto?', 'Valor e prazo dependem do escopo, das funcionalidades e dos materiais necessários. Essas condições são definidas na proposta, depois de entender o que você precisa.'],
+ ['Como ficam as atualizações depois da entrega?', 'As necessidades de atualização, hospedagem e suporte são alinhadas na proposta. Conte o que sua equipe pretende alterar e com que frequência para definirmos uma estrutura adequada.']
+];
+---
+<section class="faq wrap" id="perguntas" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">Antes de<br />começarmos.</h2><p>Algumas respostas para dar<br />o primeiro passo.</p><a class="text-link" href={whatsapp} target="_blank" rel="noopener noreferrer">Tire sua dúvida pelo WhatsApp</a></div><div class="faq-list">{questions.map(([question,answer])=><details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>

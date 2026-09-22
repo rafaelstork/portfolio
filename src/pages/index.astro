@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ScrollShape from '../components/ScrollShape.astro';
+import Projects from '../components/Projects.astro';
+import Sculpture from '../components/Sculpture.astro';
+import Arrow from '../components/Arrow.astro';
+import FAQ from '../components/FAQ.astro';
+import { local, whatsapp, instagram } from '../data/site';
+---
+<Layout title="Criação de sites e identidade visual — Rafael Stork" description="Design de marcas, criação de sites e desenvolvimento de SaaS para empresas. Conheça os projetos de Rafael Stork e converse pelo WhatsApp.">
+  <section class="hero presence" aria-labelledby="hero-title">
+    <div class="presence-sticky hero-stage">
+      <script is:inline>
+        if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+          const stage=document.currentScript.parentElement;
+          stage.classList.add('hero-awaiting');
+          setTimeout(()=>stage.classList.remove('hero-awaiting'),4500);
+        }
+      </script>
+      <div class="film-frame hero-film">
+        <video class="scroll-film" muted playsinline preload="none" poster={local('images/video-poster.webp')} data-src={local('video/presenca.mp4')} aria-label="Planos arquitetônicos se organizam conforme você rola a página"><track kind="captions" src={local('video/visual.vtt')} srclang="pt-BR" label="Descrição visual" /></video>
+      </div>
+      <div class="hero-copy wrap"><h1 id="hero-title" data-title aria-label="Design com intenção. Sites com presença.">Design com intenção.<br />Sites com presença.</h1><p>Criação de sites, identidade visual e produtos digitais<br class="desktop-only" /> para empresas que querem se apresentar melhor.</p><a class="button" href={whatsapp} target="_blank" rel="noopener noreferrer">Converse sobre seu projeto <Arrow /></a><span class="response-promise">Respondo no mesmo dia útil.</span></div>
+      <div class="hero-bottom wrap"><a class="hero-scroll" href="#trabalhos">Explore o trabalho <svg width="18" height="26" viewBox="0 0 18 26" fill="none" aria-hidden="true"><path d="M9 1v22m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.3" /></svg></a><div class="film-meta"><span class="film-instruction">O movimento acompanha sua rolagem</span><button class="film-toggle" type="button" aria-pressed="false" hidden>Pausar movimento</button></div></div>
+      <div class="film-progress" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+  <section id="presenca" class="presence-bridge wrap" aria-labelledby="presence-title">
+    <div><h2 id="presence-title" data-reveal>Da ideia<br />à presença.</h2><p>Forma, direção e movimento.<br />Cada parte encontra seu lugar.</p></div>
+    <Sculpture variant="orbit" />
+  </section>
+  <Projects />
+  <div class="shape-passage wrap"><ScrollShape variant="petals" /><p>Identidade que se reconhece.<br />Experiência que faz sentido.</p><ScrollShape variant="steps" /></div>
+  <section class="approach wrap" aria-labelledby="approach-title">
+    <div class="approach-visual"><h2 id="approach-title" data-reveal>Entre o visual<br />e o funcional.</h2><Sculpture interactive /><a class="text-link" href={local('sobre/')}>Conheça meu olhar <Arrow /></a></div>
+    <div class="approach-content"><p class="large-copy">Sou Rafael Stork. Trabalho com design e desenvolvimento para transformar ideias em presenças digitais com identidade.</p><p>Da composição de uma marca à construção de um SaaS, cada decisão precisa fazer sentido para quem vê e para quem usa.</p><ul class="services"><li>Design e identidade visual <span>Expressão</span></li><li>Web design e interfaces <span>Experiência</span></li><li>Sites e produtos digitais <span>Construção</span></li></ul><a class="text-link instagram-link" href={instagram} target="_blank" rel="noopener noreferrer">Acompanhe no Instagram <Arrow diagonal /></a></div>
+    <svg class="signature-line" viewBox="0 0 1200 120" fill="none" aria-hidden="true"><path d="M1 100H360C420 100 400 20 480 20S520 100 600 100 670 20 750 20H1199" stroke="currentColor" stroke-width="1" /></svg>
+  </section>
+  <FAQ />
+</Layout>
+

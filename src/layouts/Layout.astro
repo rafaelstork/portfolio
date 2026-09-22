@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+import { local, whatsapp, instagram } from '../data/site';
+import TransitionMark from '../components/TransitionMark.astro';
+import ScrollShape from '../components/ScrollShape.astro';
+import Sculpture from '../components/Sculpture.astro';
+import Arrow from '../components/Arrow.astro';
+const { title = 'Rafael Stork — Design e desenvolvimento', description = 'Design com intenção. Sites com presença. Conheça os trabalhos de Rafael Stork e converse sobre seu próximo projeto.' } = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : null;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#F7F5EF" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" href={local('brand/favicon.svg')} type="image/svg+xml" />
+    <link rel="preload" href={local('fonts/quicksand-variable.ttf')} as="font" type="font/ttf" crossorigin />
+    <style is:inline set:html={`@font-face{font-family:Quicksand;src:url('${local('fonts/quicksand-variable.ttf')}') format('truetype');font-weight:300 700;font-display:swap}`} />
+    <script is:inline>
+      (()=>{let choice='system';try{choice=localStorage.getItem('rafa-theme')||'system';}catch{}const dark=choice==='dark'||(choice==='system'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=dark?'dark':'light';document.documentElement.classList.add('js');})();
+    </script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <div class="header-space" aria-hidden="true"></div>
+    <header class="site-header wrap">
+      <a class="brand" href={local()} aria-label="Rafael Stork — início"><img class="logo-day" src={local('brand/logo.svg')} width="110" height="66" alt="Rafael Stork" /><img class="logo-night" src={local('brand/logo-light.svg')} width="110" height="66" alt="Rafael Stork" /></a>
+      <span class="header-profession">Designer &amp;<br />desenvolvedor web</span><nav aria-label="Navegação principal">
+        <a href={local('#trabalhos')}>Trabalhos</a>
+        <a href={local('sobre/')}>Sobre</a>
+        <a class="nav-contact" href={whatsapp} target="_blank" rel="noopener noreferrer">Conversar <Arrow diagonal /></a>
+      </nav>
+      <div class="header-actions"><button class="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Modo escuro" data-theme-switch><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z"/></svg><span class="theme-thumb"></span></button><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div>
+    </header>
+    <dialog id="mobile-menu" class="mobile-menu" aria-label="Menu de navegação">
+      
+      <div class="menu-art"><ScrollShape variant="petals" /><ScrollShape variant="steps" /></div>
+      <nav aria-label="Navegação móvel"><a href={local()}>Início <Arrow /></a><a href={local('#trabalhos')}>Projetos <Arrow /></a><a href={local('trabalhos/')}>Todos os trabalhos <Arrow /></a><a href={local('sobre/')}>Sobre <Arrow /></a><a href={whatsapp} target="_blank" rel="noopener noreferrer">Vamos conversar <Arrow diagonal /></a></nav>
+      <a class="menu-instagram" href={instagram} target="_blank" rel="noopener noreferrer">@rafaelstork.dzn <Arrow diagonal /></a>
+    </dialog>
+    <div class="page-overlay" aria-hidden="true"><span class="overlay-band"></span><span class="overlay-band"></span><span class="overlay-band"></span><div class="overlay-emblem"><TransitionMark /></div></div>
+    <div id="swup" class="transition-page">
+      <main id="main" tabindex="-1"><slot /></main>
+      <footer class="footer">
+        <div class="wrap">
+          <div class="footer-top"><Sculpture variant="fold" /><h2>Vamos dar forma<br />ao seu próximo projeto?</h2><div class="footer-contact"><a class="button button-light" href={whatsapp} target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <Arrow diagonal /></a><p class="response-promise">Respondo no mesmo dia útil.</p></div></div>
+          <div class="footer-bottom"><a href={local()} aria-label="Rafael Stork — início"><img src={local('brand/logo-light.svg')} width="106" height="63" alt="Rafael Stork" loading="lazy" /></a><p>Design e desenvolvimento.<br />Clareza, proporção e presença.</p><div class="footer-social"><a href={instagram} target="_blank" rel="noopener noreferrer">@rafaelstork.dzn</a><a href="https://wa.me/5548984648376" target="_blank" rel="noopener noreferrer">(48) 98464-8376</a></div><span>© {new Date().getFullYear()} Rafael Stork</span><a href={local('politica-de-privacidade/')}>Política de privacidade</a></div>
+        </div>
+      </footer>
+    </div>
+    <a class="mobile-contact" href={whatsapp} target="_blank" rel="noopener noreferrer"><span>Conversar sobre meu projeto<small>Resposta no mesmo dia útil</small></span><Arrow diagonal /></a>
+    <script>import '../scripts/app';</script>
+  </body>
+</html>

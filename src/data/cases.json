@@ -1,0 +1,269 @@
+[
+  {
+    "slug": "321-modular-franquias",
+    "title": "321 Modular",
+    "subtitle": "Franquias",
+    "category": "Site comercial",
+    "image": "franquias-desktop.webp",
+    "alt": "Página de franquias 321 Modular, com composição verde e animação de uma operação industrial",
+    "url": "https://franquias.321modular.com.br/",
+    "color": "#193b23",
+    "summary": "Uma oportunidade de negócio apresentada com clareza, movimento e personalidade.",
+    "intro": "Um site que conecta o desejo pelos chalés ao universo de uma operação industrializada. A apresentação conduz o visitante do produto ao modelo de franquia e ao primeiro contato comercial.",
+    "focus": [
+      "Apresentação da franquia",
+      "Narrativa visual",
+      "Contato comercial"
+    ],
+    "sections": [
+      {
+        "title": "O negócio ganha forma.",
+        "text": "A abertura aproxima o visitante da operação: produto, logística e estrutura fazem parte da mesma narrativa visual. O movimento ajuda a explicar o universo da marca desde o primeiro contato."
+      },
+      {
+        "title": "Informação que conduz.",
+        "text": "Modelo de negócio, suporte, processo de entrada e dúvidas frequentes organizam a jornada de quem está avaliando uma franquia. Os caminhos de contato acompanham essa leitura."
+      }
+    ],
+    "type": "web",
+    "gallery": [
+      {
+        "image": "franquias-desktop.webp",
+        "alt": "Página de franquias em computador",
+        "width": 1905,
+        "height": 1072,
+        "device": "desktop"
+      },
+      {
+        "image": "franquias-mobile.webp",
+        "alt": "Página de franquias em celular",
+        "width": 415,
+        "height": 899,
+        "device": "phone"
+      },
+      {
+        "image": "franquias-processo.webp",
+        "alt": "Etapas para abrir uma franquia",
+        "width": 1905,
+        "height": 1072,
+        "device": "desktop"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "321-modular-jaguaruna",
+    "title": "321 Modular",
+    "subtitle": "Jaguaruna",
+    "category": "Catálogo digital",
+    "image": "jaguaruna-desktop.webp",
+    "detailImage": "chale-jaguaruna.webp",
+    "detailAlt": "Chalé da 321 Modular apresentado no site de Jaguaruna",
+    "alt": "Site da 321 Modular Jaguaruna, com fotografia de um chalé e apresentação dos modelos",
+    "url": "https://jaguaruna.321modular.com.br/",
+    "color": "#384d3d",
+    "summary": "Arquitetura, imagens e informação se encontram em um catálogo para explorar.",
+    "intro": "A presença digital da unidade de Jaguaruna coloca os chalés em primeiro plano. Fotografias, modelos e informações comerciais ajudam o visitante a conhecer as possibilidades antes de conversar com a equipe.",
+    "focus": [
+      "Apresentação regional",
+      "Catálogo de modelos",
+      "Atendimento"
+    ],
+    "sections": [
+      {
+        "title": "O espaço como protagonista.",
+        "text": "As imagens apresentam a arquitetura e a relação dos chalés com o entorno. A navegação reúne os modelos A-Frame, Cabana e Domus, com páginas próprias para aprofundar a exploração."
+      },
+      {
+        "title": "Do interesse à conversa.",
+        "text": "Plantas, áreas, vídeos e informações dos modelos convivem com acessos ao atendimento regional. Uma estrutura que aproxima a escolha do produto do próximo passo."
+      }
+    ],
+    "type": "web",
+    "gallery": [
+      {
+        "image": "jaguaruna-desktop.webp",
+        "alt": "Página inicial do catálogo em computador",
+        "width": 1905,
+        "height": 1072,
+        "device": "desktop"
+      },
+      {
+        "image": "jaguaruna-mobile.webp",
+        "alt": "Página do modelo A-Frame em celular",
+        "width": 415,
+        "height": 899,
+        "device": "phone"
+      },
+      {
+        "image": "jaguaruna-modelo.webp",
+        "alt": "Página interna do modelo A-Frame em computador",
+        "width": 1905,
+        "height": 1072,
+        "device": "desktop"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "faz-agenda",
+    "title": "Faz Agenda",
+    "subtitle": "Um SaaS completo",
+    "category": "Design e desenvolvimento de SaaS",
+    "image": "fazagenda-desktop.webp",
+    "alt": "Site Faz Agenda em fundo escuro, com uma prévia da interface de agenda e gestão",
+    "url": "https://fazagenda.com.br/",
+    "color": "#101e29",
+    "summary": "Um produto desenvolvido por inteiro: da experiência de uso ao sistema que sustenta a operação.",
+    "intro": "Desenvolvi integralmente o Faz Agenda, um SaaS para barbearias, salões e profissionais autônomos. O projeto reúne agenda, clientes, equipe e financeiro em um produto próprio, acompanhado de seu site de apresentação.",
+    "focus": [
+      "Desenvolvimento integral do SaaS",
+      "Design de interfaces",
+      "Site de apresentação"
+    ],
+    "sections": [
+      {
+        "title": "Da interface ao sistema.",
+        "text": "O trabalho abrange todo o SaaS. A experiência visual e o desenvolvimento fazem parte da mesma construção, conectando as telas aos recursos usados na rotina do negócio."
+      },
+      {
+        "title": "Um produto para o dia a dia.",
+        "text": "Agendamento, organização de clientes, gestão da equipe e acompanhamento financeiro se encontram na plataforma. O site público apresenta esses recursos e oferece um caminho para conhecer o produto."
+      }
+    ],
+    "type": "web",
+    "gallery": [
+      {
+        "image": "fazagenda-desktop.webp",
+        "alt": "Apresentação do SaaS em computador",
+        "width": 1910,
+        "height": 1074,
+        "device": "desktop"
+      },
+      {
+        "image": "fazagenda-mobile.webp",
+        "alt": "Acesso ao aplicativo em celular",
+        "width": 430,
+        "height": 932,
+        "device": "phone"
+      },
+      {
+        "image": "fazagenda-app.webp",
+        "alt": "Tela pública de acesso ao aplicativo",
+        "width": 1920,
+        "height": 1080,
+        "device": "desktop"
+      },
+      {
+        "image": "fazagenda-planos.webp",
+        "alt": "Planos da plataforma",
+        "width": 1910,
+        "height": 1074,
+        "device": "desktop"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "maria-izabel",
+    "title": "Maria Izabel",
+    "subtitle": "Uma assinatura para o cuidado",
+    "category": "Identidade de marca",
+    "type": "brand",
+    "image": "maria-fachada.webp",
+    "alt": "Aplicação da identidade Maria Izabel em uma fachada",
+    "color": "#362117",
+    "summary": "Um monograma expressivo, uma paleta acolhedora e uma assinatura que conecta as aplicações.",
+    "intro": "A identidade de Maria Izabel combina iniciais entrelaçadas, um aro aberto e uma assinatura clássica. Tons de espresso, champagne, nude e marfim formam uma linguagem de cuidado, presente no símbolo e em seus diferentes suportes.",
+    "focus": [
+      "Conceito e identidade visual",
+      "Sistema de assinaturas",
+      "Aplicações da marca"
+    ],
+    "gallery": [
+      {
+        "image": "maria-fachada.webp",
+        "alt": "Mockup da assinatura Maria Izabel na fachada",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "image": "maria-papelaria.webp",
+        "alt": "Mockup de cartões Maria Izabel em tons espresso e marfim",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "image": "maria-embalagens.webp",
+        "alt": "Mockup de sacola e embalagem com o monograma Maria Izabel",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "sections": [
+      {
+        "title": "Um traço que conecta.",
+        "text": "As iniciais entrelaçadas dão reconhecimento ao monograma. O desenho contínuo e o aro aberto equilibram delicadeza e presença, acompanhados por um nome de expressão clássica."
+      },
+      {
+        "title": "Consistência em cada suporte.",
+        "text": "Assinaturas vertical, horizontal e reduzida, versões cromáticas e orientações de uso compõem o sistema. Os mockups da apresentação mostram a identidade em fachada, papelaria e embalagens."
+      }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "321-modular-identidade",
+    "title": "321 Modular",
+    "subtitle": "Identidade em construção",
+    "category": "Identidade de marca",
+    "type": "brand",
+    "image": "321-brand-papelaria.webp",
+    "alt": "Aplicação da marca 321 Modular em papelaria",
+    "color": "#1f331b",
+    "summary": "Uma identidade que parte da arquitetura e se estende do símbolo às aplicações.",
+    "intro": "A marca 321 Modular traz a silhueta de um chalé e três linhas paralelas de espessura progressiva. O sistema organiza assinaturas, cores, tipografia e aplicações para manter a identidade reconhecível em diferentes contextos.",
+    "focus": [
+      "Desenho da marca",
+      "Sistema visual",
+      "Manual e aplicações"
+    ],
+    "gallery": [
+      {
+        "image": "321-brand-papelaria.webp",
+        "alt": "Mockup de papelaria da 321 Modular",
+        "width": 878,
+        "height": 615
+      },
+      {
+        "image": "321-brand-camiseta.webp",
+        "alt": "Mockup da marca 321 Modular aplicada em camiseta",
+        "width": 599,
+        "height": 898
+      },
+      {
+        "image": "321-brand-sacola.webp",
+        "alt": "Mockup da marca em sacola de papel",
+        "width": 740,
+        "height": 494
+      },
+      {
+        "image": "321-brand-sistema.webp",
+        "alt": "Assinaturas vertical, horizontal e símbolo no manual da marca",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "sections": [
+      {
+        "title": "A construção no próprio símbolo.",
+        "text": "A silhueta do chalé aproxima a marca do seu universo. As três linhas traduzem a atenção às etapas, aos detalhes e à estrutura que sustenta o conjunto."
+      },
+      {
+        "title": "Do manual ao cotidiano.",
+        "text": "A paleta de verdes, as cores complementares e a combinação de Montserrat com Rajdhani organizam a linguagem. As aplicações apresentadas no manual incluem materiais digitais, papelaria, vestuário e embalagens."
+      }
+    ],
+    "featured": true
+  }
+]

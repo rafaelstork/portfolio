@@ -1,0 +1,5 @@
+{
+  "source": "Original Three.js geometry authored for this site",
+  "method": "Browser capture of src/scripts/sculpture.ts rendered sculpture; optimized to WebP",
+  "purpose": "Static fallback when WebGL is unavailable"
+}

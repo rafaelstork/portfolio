@@ -1,0 +1,11 @@
+---
+const { variant = 'ribbons', interactive = false, class: className = '' } = Astro.props;
+---
+<div class:list={['sculpture', `sculpture-${variant}`, className]} data-sculpture data-variant={variant}>
+  <div class="sculpture-canvas" role={interactive ? 'img' : undefined} aria-label={interactive ? 'Composição interativa de módulos arredondados. Arraste ou use os controles para explorar a forma.' : undefined} aria-hidden={interactive ? undefined : 'true'}>
+    <svg class="sculpture-fallback" viewBox="0 0 400 320" aria-hidden="true">
+      {variant === 'orbit' ? <g fill="none" stroke="currentColor"><ellipse cx="200" cy="155" rx="110" ry="70" stroke-width="7" transform="rotate(-25 200 155)"/><ellipse cx="200" cy="155" rx="80" ry="105" stroke-width="3" transform="rotate(30 200 155)"/><circle cx="200" cy="155" r="46" fill="#dce9e8" stroke="none"/><circle cx="293" cy="114" r="18" fill="#b97866" stroke="none"/></g> : variant === 'fold' ? <g><path d="M200 50 290 130 265 240 145 250 105 130Z" fill="#b97866"/><path d="m200 50-55 200 145-120Z" fill="#dce9e8"/><path d="m290 130-145 120 120-10Z" fill="#99b9b8"/></g> : <g transform="rotate(-8 200 160)">{['#123e46','#99b9b8','#f7f5ef','#b97866','#123e46'].map((color,i)=><rect x="105" y={74+i*36} width="190" height="27" rx="10" fill={color}/>)}</g>}
+    </svg>
+  </div>
+  {interactive && <div class="sculpture-controls" hidden><span class="drag-hint">Arraste para explorar</span><button type="button" data-turn aria-label="Girar escultura"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10a8 8 0 1 0-1 7M20 4v6h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button type="button" data-expand aria-pressed="false">Separar módulos <span aria-hidden="true">+</span></button></div>}
+</div>
