@@ -160,7 +160,6 @@ body.has-hero .header-space{height:0}.header-profession{font-size:13px;font-weig
 .hero-motion-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;visibility:hidden}
 .hero-webgl-ready .hero-motion-canvas{visibility:visible}
 .hero-webgl-ready video{opacity:0}
-.hero-stage.hero-entering:after{opacity:0}
 .hero-awaiting .hero-film,.hero-awaiting .hero-copy,.hero-awaiting .hero-bottom{visibility:hidden}
 .hero-awaiting:after{opacity:0}
 /* One aperture reveals the complete first viewport, including navigation. */
