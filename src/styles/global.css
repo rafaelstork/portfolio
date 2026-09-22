@@ -186,3 +186,14 @@ body:has(.hero-awaiting) .site-header{visibility:hidden}
 .faq details[data-expanded=false] summary span{transform:rotate(0)}
 .faq details[data-expanded=true] summary span{transform:rotate(45deg)}
 @media(prefers-reduced-motion:reduce){.faq summary span{transition:none}}
+/* Keep the film present: contrast is concentrated behind the copy instead of washing the full frame. */
+.hero .hero-copy{width:min(640px,68vw)}
+.hero .hero-copy h1{font-size:clamp(38px,4.25vw,62px);line-height:1.1;max-width:620px;font-weight:600}
+.hero .hero-copy>p{font-size:16px;line-height:1.55;max-width:520px;margin:18px 0 22px}
+.hero-stage:after{background:linear-gradient(90deg,rgba(247,245,239,.8) 0%,rgba(247,245,239,.68) 26%,rgba(247,245,239,.22) 43%,transparent 56%),linear-gradient(0deg,rgba(247,245,239,.58) 0%,rgba(247,245,239,.1) 25%,transparent 46%)}
+@media(max-width:760px){
+  .hero .hero-copy{width:calc(100% - 48px)}
+  .hero .hero-copy h1{font-size:clamp(32px,8vw,44px);line-height:1.08}
+  .hero .hero-copy>p{font-size:14px;line-height:1.5;max-width:280px;margin:14px 0 18px}
+  .hero-stage:after{background:radial-gradient(ellipse 105% 54% at 18% 72%,rgba(247,245,239,.82) 0%,rgba(247,245,239,.5) 48%,transparent 82%),linear-gradient(0deg,rgba(247,245,239,.62) 0%,transparent 48%)}
+}
