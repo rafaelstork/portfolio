@@ -71,7 +71,6 @@ function initPage() {
         const split=SplitText.create(heading,{type:'lines',autoSplit:true,mask:'lines',onSplit:self=>gsap.from(self.lines,{yPercent:105,duration:.85,stagger:.09,ease:'expo.out'})});
         disposers.push(()=>split.revert());
       }
-      if(document.querySelector('.hero-copy'))gsap.from('.hero-copy>p,.hero-copy>.button',{y:18,opacity:0,duration:.8,stagger:.1,delay:.25,ease:'power3.out'});
       gsap.from('.sculpture',{opacity:0,duration:1.1,delay:.1});
       document.querySelectorAll('[data-reveal]').forEach(el=>gsap.from(el,{y:28,opacity:0,duration:.85,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 94%',once:true}}));
       document.querySelectorAll('.project-image').forEach(el=>gsap.from(el,{clipPath:'inset(8% 0 0 0)',duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 95%',once:true}}));
